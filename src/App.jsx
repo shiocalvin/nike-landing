@@ -1,31 +1,41 @@
+import Hero from "./sections/Hero.jsx";
+import PopularProducts from "./sections/PopularProducts.jsx";
+import SuperQuality from "./sections/SuperQuality.jsx";
+import Services from "./sections/Services.jsx";
+import SpecialOffers from "./sections/SpecialOffers.jsx";
+import CustomerReviews from "./sections/CustomerReviews.jsx";
+import Subscribe from "./sections/Subscribe.jsx";
+import Footer from "./sections/Footer.jsx";
+import Nav from "./Components/Nav.jsx";
+
 function App() {
     return (
         // relative position to it's container
         <main className={"relative"}>
-            nav
+            <Nav />
             <section className={"xl:padding-1 wide:padding-r padding-b"}>
-                Hero
+                <Hero  />
             </section>
             <section className={"padding"}>
-                Popular products
+                <PopularProducts />
             </section>
             <section className={"padding"}>
-                super quality
+                <SuperQuality />
             </section>
             <section className={"padding-x py-10"}>
-                services
+                <Services />
             </section>
             <section className={"padding"}>
-                special order
+                <SpecialOffers />
             </section>
             <section className={"padding bg-pale-blue"}>
-                customers review
+                <CustomerReviews />
             </section>
             <section className={"padding padding-x sm:py-32 py-16 w-full"}>
-                subscribe
+                <Subscribe />
             </section>
             <section className={"padding bg-black padding-x padding-t pb-8"}>
-                footer
+                <Footer />
             </section>
         </main>
     );
