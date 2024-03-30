@@ -1,6 +1,6 @@
-function Button({label, iconUrl}) {
+function Button({label, iconUrl, backGroundColor, borderColor, textColor}) {
     return (
-        <button className={'flex justify-center items-center px-7 py-4 border font-montserrat leading-none bg-coral-red rounded-full text-white border-coral-red'}>
+        <button className={`flex justify-center items-center px-7 py-4 border font-montserrat leading-none  rounded-full ${backGroundColor ? `${backGroundColor} ${textColor} ${borderColor}` : 'bg-coral-red text-white border-coral-red'}`}>
             {label}
             {iconUrl && <img src={iconUrl} alt="/" className={'ml-2 rounded-full w-5 h-5'}/>}
         </button>
